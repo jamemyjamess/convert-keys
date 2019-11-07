@@ -18,7 +18,7 @@ const toSnake = (s) => {
   return s.replace( /([A-Z])/g, "_$1").toLowerCase();
 }
 
-const keysSnakeToCamel = o => {
+export const keysSnakeToCamel = o => {
   if (isObject(o)) {
     const n = {};
     Object.keys(o).forEach((k) => {
@@ -33,7 +33,7 @@ const keysSnakeToCamel = o => {
   return o;
 }
 
-const keysCamelToSnake = o => {
+export const keysCamelToSnake = o => {
   if (isObject(o)) {
     const n = {};
     Object.keys(o).forEach((k) => {
