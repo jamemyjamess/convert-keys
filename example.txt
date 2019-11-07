@@ -1,0 +1,37 @@
+How to use
+  // obj keys snake case to camel case
+  let objsnake = {
+    firts_name: 'James',
+    last_name: 'O',
+    mistress: [
+      {
+        name: 'Taylor Swift',
+        birth_day: 'December 13, 1989',
+        career: 'artist'
+      },
+      {
+        name: 'Sophie Turner',
+        birth_day: 'February 21, 1996',
+        career: 'actor'
+      }
+    ]
+  }
+  console.log(keysSnakeToCamel(objsnake))
+  // obj keys camel case to snake case
+  let objcamel = {
+    firstName: 'James',
+    lastName: 'O',
+    mistress: [
+      {
+        name: 'Taylor Swift',
+        birthDay: 'December 13, 1989',
+        career: 'artist'
+      },
+      {
+        name: 'Sophie Turner',
+        birthDay: 'February 21, 1996',
+        career: 'actor'
+      }
+    ]
+  }
+  console.log(keysCamelToSnake(objcamel))
